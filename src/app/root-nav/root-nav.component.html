@@ -3,56 +3,39 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['add-user']">Add user</a>
-      <a mat-list-item [routerLink]="['update']">Update User</a>
-      <a mat-list-item [routerLink]="['delete']">Delete User</a>
+      <div class="main__container">
+        <div class="aside">
+            <div class="logo">
+                <a href="#">
+                    <span>в</span>ладимир
+                </a>
+            </div>
+            <div class="nav__toggler">
+                <span>
+                </span>
+            </div>
+            <mat-nav-list>
+              <ul class="nav">
+                  <li class="js-nav" mat-list-item [routerLink]="['home']"><div class="active"><i class=" home"><span>Главная</span></i></div></li>
+                  <li class="js-nav" mat-list-item [routerLink]="['about']"><div><i class="user"><span>Обо мне</span></i></div></li>
+                  <li class="js-nav" mat-list-item [routerLink]="['ability']"><div><i class="list"><span>Наыки</span></i></div></li>
+                  <li class="js-nav" mat-list-item [routerLink]="['portfolio']"><div><i class="briefcase"><span>Портфолио</span></i></div></li>
+                  <li class="js-nav" mat-list-item [routerLink]="['contacts']"><div><i class="comments"><span>Контакты</span></i></div></li>
+              </ul>
+            </mat-nav-list>
+        </div>
+        <div class="main__content">
+    
+        </div>
+    </div>
     </mat-nav-list>
 
 
-    <div class="main__container">
-      <div class="aside">
-          <div class="logo">
-              <a href="#">
-                  <span>в</span>ладимир
-              </a>
-          </div>
-          <div class="nav__toggler">
-              <span>
-              </span>
-          </div>
-          <mat-nav-list>
-            <ul class="nav">
-                <li class="js-nav" mat-list-item routerLink="['home']"><div class="active"><i class=" home"><span>Главная</span></i></div></li>
-                <li class="js-nav" mat-list-item routerLink="['about']"><div><i class="user"><span>Обо мне</span></i></div></li>
-                <li class="js-nav" mat-list-item routerLink="['ability']"><div><i class="list"><span>Наыки</span></i></div></li>
-                <li class="js-nav" mat-list-item routerLink="['portfolio']"><div><i class="briefcase"><span>Портфолио</span></i></div></li>
-                <li class="js-nav" mat-list-item routerLink="['contacts']"><div><i class="comments"><span>Контакты</span></i></div></li>
-            </ul>
-          </mat-nav-list>
-      </div>
-      <div class="main__content">
-  
-      </div>
-  </div>
-
-
-
+    
 
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>resume</span>
-    </mat-toolbar>
     <ng-content></ng-content>
     <!-- Add Content Here -->
   </mat-sidenav-content>
