@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent {
-
+  img={
+    Image:'/assets/imgs/picture.jpg'
+  }
 }

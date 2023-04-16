@@ -11,106 +11,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="portfolio__item padd__15">
-                <a href="miami/index.html">
+            <div *ngFor="let site of sites" class="portfolio__item padd__15">
+                <a href={{site.link}}>
                     <div class="portfolio__inner shadow__dark">
                         <div class="portfolio__img">
-                            <img src="local/img/gallery.png" alt="">
+                            <img src={{site.screen}} alt="">
                         </div>
                         <div class="portfolio__wrap">
-                            <h5>Сайт <span>"miami"</span></h5>
-                            <div class="portfolio__text">о клубной жизни в Miami</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio__item padd__15">
-                <a href="resume/index.html">
-                    <div class="portfolio__inner shadow__dark">
-                        <div class="portfolio__img">
-                            <img src="local/img/resume.png" alt="">
-                        </div>
-                        <div class="portfolio__wrap">
-                            <h5>Сайт <span>"резюме"</span></h5>
-                            <div class="portfolio__text">Одна страница собравшая в себе все часто используемые элементы</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio__item padd__15">
-                <a href="valo/index.html">
-                    <div class="portfolio__inner shadow__dark">
-                        <div class="portfolio__img">
-                            <img src="local/img/valo.png" alt="">
-                        </div>
-                        <div class="portfolio__wrap">
-                            <h5>Сайт <span>"VALO"</span></h5>
-                            <div class="portfolio__text">Одна страница презентующая элитную гостиницу</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio__item padd__15">
-                <a href="move/index.html">
-                    <div class="portfolio__inner shadow__dark">
-                        <div class="portfolio__img">
-                            <img src="local/img/transportation.png" alt="">
-                        </div>
-                        <div class="portfolio__wrap">
-                            <h5>Сайт<span>"MOVE"</span></h5>
-                            <div class="portfolio__text">предоставляющий услуги перевозок</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio__item padd__15">
-                <a href="novinka-hotel/index.html">
-                    <div class="portfolio__inner shadow__dark">
-                        <div class="portfolio__img">
-                            <img src="local/img/novinka.png" alt="">
-                        </div>
-                        <div class="portfolio__wrap">
-                            <h5>Сайт <span>"Новинка"</span></h5>
-                            <div class="portfolio__text">отеля на побережье Азовского моря</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio__item padd__15">
-                <a href="odigo/index.html">
-                    <div class="portfolio__inner shadow__dark">
-                        <div class="portfolio__img">
-                            <img src="local/img/japan.png" alt="">
-                        </div>
-                        <div class="portfolio__wrap">
-                            <h5>Сайт <span>"odigo"</span></h5>
-                            <div class="portfolio__text">о путишествии по Японии</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio__item padd__15">
-                <a href="bicycle/index.html">
-                    <div class="portfolio__inner shadow__dark">
-                        <div class="portfolio__img">
-                            <img src="local/img/bicycle.png" alt="">
-                        </div>
-                        <div class="portfolio__wrap">
-                            <h5>Сайт <span>"bicycle"</span></h5>
-                            <div class="portfolio__text">Страница созданная для теста способностей за 4 часа</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio__item padd__15">
-                <a href="gold/index.html">
-                    <div class="portfolio__inner shadow__dark">
-                        <div class="portfolio__img">
-                            <img src="local/img/goldy.png" alt="">
-                        </div>
-                        <div class="portfolio__wrap">
-                            <h5>Сайт <span>"Goldy Store"</span></h5>
-                            <div class="portfolio__text">ювелирного магазина</div>
+                            <h5>Сайт <span>{{site.screen}}</span></h5>
+                            <div class="portfolio__text">{{site.description}}</div>
                         </div>
                     </div>
                 </a>

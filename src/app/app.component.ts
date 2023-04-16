@@ -11,7 +11,6 @@ import { map, shareReplay } from 'rxjs/operators';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(

@@ -25,6 +25,7 @@ import { DeleteUserComponent } from './delete-user/delete-user.component';
 import { UpdateUserComponent } from './update-user/update-user.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AddUserComponent,
     ViewUserComponent,
     DeleteUserComponent,
-    UpdateUserComponent
+    UpdateUserComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +51,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
   ],
   providers: [MenuService,importProvidersFrom([BrowserAnimationsModule])],
   bootstrap: [AppComponent]
