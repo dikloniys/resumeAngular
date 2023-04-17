@@ -11,15 +11,10 @@
             </div>
         </div>
         <div class="contacts__links  padd__15">
-            <div class="row">
-                <div class="contacts__item">
-                    <a href="https://t.me/vladimir01099400" Target = "_blank">
-                        <i class="fa-brands fa-telegram"></i>
-                    </a>
-                </div>
-                <div class="contacts__item">
-                    <a href="https://vk.com/v.fedorov94" Target = "_blank">
-                        <i class="fa-brands fa-vk"></i>
+            <div  class="row">
+                <div *ngFor="let contact of contacts" class="contacts__item">
+                    <a href={{contact.link}} Target = "_blank">
+                        <img src={{contact.logo}} alt="">
                     </a>
                 </div>
             </div>

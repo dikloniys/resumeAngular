@@ -5,8 +5,8 @@
                 <h2>Навыки</h2>
             </div>
         </div>
-        <div *ngFor="let ability of abilities" class="row dasctop">
-            <div class="ability__item padd__15">
+        <div class="row dasctop">
+            <div *ngFor="let ability of abilities" class="ability__item padd__15">
                 <div class="ability__inner">
                     <div class="icon">
                         <img src={{ability.screen}} alt="">
@@ -16,7 +16,7 @@
                 <p>{{ability.description}}</p>
             </div>
         </div>
-        <div class="swiper mobill ability__swiper mySwiper">
+        <div  class="swiper mobill ability__swiper mySwiper">
             <div class="swiper-wrapper ability__wrapper">
                 <div class="swiper-slide ability__slide">
                     <div *ngFor="let ability of abilities" class="ability__item padd__15">

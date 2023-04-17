@@ -8,39 +8,40 @@ import { Component } from '@angular/core';
 export class AbilityComponent {
   abilities=[
     {
-      screen:'/assets/imgs/abilit/github.png',
+      screen:'/assets/imgs/github.png',
       abilityName:'github',
-      description:'',
+      description:' ',
     },
     {
-      screen:'/assets/imgs/abilit/bem.png',
+      screen:'/assets/imgs/bem.png',
       abilityName:'bem',
       description:'',
     },
     {
-      screen:'/assets/imgs/abilit/sass.png',
+      screen:'/assets/imgs/sass.png',
       abilityName:'sass',
       description:'',
     },
     {
-      screen:'/assets/imgs/abilit/photoshop.png',
+      screen:'/assets/imgs/photoshop.png',
       abilityName:'photoshop',
       description:'',
     },
     {
-      screen:'/assets/imgs/abilit/figma.png',
+      screen:'/assets/imgs/figma.png',
       abilityName:'figma',
       description:'',
     },
     {
-      screen:'/assets/imgs/abilit/jquery.png',
+      screen:'/assets/imgs/jquery.png',
       abilityName:'jquery',
       description:'',
     },
     {
-      screen:'/assets/imgs/abilit/angular.png',
+      screen:'/assets/imgs/angular.png',
       abilityName:'angular',
       description:'',
     },
   ]
+
 }
